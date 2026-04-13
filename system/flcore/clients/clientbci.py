@@ -181,7 +181,6 @@ class clientbci:
 
         self.pm_train.extend(self.model.gate.pm)
         scores = [torch.mean(pm).item() for pm in self.pm_train]
-        print(np.mean(scores), np.std(scores))
 
         del output, rep, rec, rep_base
         torch.cuda.empty_cache()
