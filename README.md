@@ -1,5 +1,4 @@
-# FedBCI: Reliable Clustered Federated Learning by
-Bridging Intra- and Inter-Cluster Inconsistencies
+# FedBCI: Reliable Clustered Federated Learning by Bridging Intra- and Inter-Cluster Inconsistencies
 
 ## Dataset Partitioning
 
