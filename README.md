@@ -1,64 +1,18 @@
-# FedBCI
+# FedBCI: Reliable Clustered Federated Learning by
+Bridging Intra- and Inter-Cluster Inconsistencies
 
-## 📌 Introduction
+## Dataset Partitioning
 
-This repository contains the implementation of our project on Federated Learning.
+We adopt the data partitioning implementation from PFLlib and provide the partitioning results for CIFAR-100-exdir0.1 as a zip file.
 
-The code is designed for experiments on personalized federated learning algorithms.
 
----
+## Run the code
 
-## 🚀 Getting Started
+CUDA_VISIBLE_DEVICES=0 python -u main.py -t 1 -jr 1 -nc 50 -nb 100 -data Cifar100-exdir0.1 -m cnn -algo FedBCI -did 0 -lam 4
 
-### 1. Clone the repository
+## Acknowledgement
 
-```bash
-git clone https://github.com/liao0731/FedBCI.git
-cd FedBCI
-```
+Some parts of our code and implementation has been adapted from PFLlib repository.
 
-### 2. Install dependencies
 
-```bash
-pip install -r requirements.txt
-```
 
----
-
-## 📂 Dataset
-
-The dataset is stored in the `dataset/` folder.
-
-If not included, please download or generate it manually.
-
----
-
-## ▶️ Run the code
-
-```bash
-python system/main.py
-```
-
----
-
-## 📁 Project Structure
-
-```
-FedBCI/
- ├── system/        # main training code
- ├── dataset/       # datasets (LFS or external)
- ├── utils/         # utility functions
- ├── flcore/        # core algorithms
-```
-
----
-
-## 🙏 Acknowledgement
-
-Some parts of the implementation are inspired by existing federated learning libraries.
-
----
-
-## 📄 License
-
-This project is for research purposes only.
