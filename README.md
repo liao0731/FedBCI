@@ -9,9 +9,3 @@ We adopt the data partitioning implementation from PFLlib and provide the partit
 
 CUDA_VISIBLE_DEVICES=0 python -u main.py -t 1 -jr 1 -nc 50 -nb 100 -data Cifar100-exdir0.1 -m cnn -algo FedBCI -did 0 -lam 4
 
-## Acknowledgement
-
-Some parts of our code and implementation has been adapted from PFLlib repository.
-
-
-
